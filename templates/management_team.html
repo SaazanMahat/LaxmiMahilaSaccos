@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Management Team | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'team.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="team">
+    <h5>MANAGEMENT TEAM</h5>
+    <div class="teams-photos text-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-4"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/maiya_mahat.jpg" />
+
+          <p id="descp">
+            <strong id="position">Chairperson</strong><br /><strong>Maiya Mahat</strong><br />Dhulikhel-5,
+            Kavre
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4"></div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/himali_shrestha.jpg" />
+          <p id="descp">
+            <strong id="position">Vice-Chairperson</strong><br /><strong>Himali Shrestha</strong><br />Banepa-7,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/subasana_shrestha.jpg" />
+          <p id="descp">
+            <strong id="position">Secretary</strong><br /><strong>Subasana Shrestha</strong><br />Panauti-5,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/sarmila_adhikari.jpg" />
+          <p id="descp">
+            <strong id="position">Vice-Secretary</strong><br /><strong>Sarmila Adhikari</strong><br />Panauti-5,
+            Kavre<br />
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/sakuntala_shrestha.jpg" />
+          <p id="descp">
+            <strong id="position">Treasurer</strong><br /><strong>Sakuntala Shrestha</strong><br />Banepa-5,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/mala_shrestha.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Mala Kumari Shrestha</strong><br />Dhulikhel-6,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/renu_thapa.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Renu Thapa</strong><br />Panauti-5, Kavre<br />
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/anita_kuinkel.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Anita Sapkota (Kuinkel)</strong><br />Panauti-5,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/sabitra_deuja.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Sabitra Deuja</strong><br />Panauti-5,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/kausalya_deuja.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Kausalya Deuja</strong><br />Panauti-5,
+            Kavre<br />
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/kabita_mahat.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Kabita Karki Mahat</strong><br />Dhulikhel-5,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/gauri_sapkota.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Gauri Sapkota</strong><br />Banepa-7,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/ujeli_mijar.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Ujeli Mijar</strong><br />Panauti-5,
+            Kavre<br />
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-3"></div>
+      </div>
+      <img id="bottom-img" src="/media/bottom.png" />
+    </div>
+  </div>
+
+  {% endblock %}
+</body>
+
+</html>

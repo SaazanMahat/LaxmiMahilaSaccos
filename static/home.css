@@ -1,0 +1,281 @@
+.welcome h1{
+    font-family: fantasy;
+    padding-top: 50px;
+    color: #019031;
+}
+
+.welcome h5{
+    font-size: 16px;
+}
+
+.welcome p{
+    margin-top: 50px;
+    color: #222;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+.btn{
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+
+#affiliatins img{
+    height: 220px;
+}
+
+
+.main img{
+
+    width: 100%;
+}
+
+.carous{
+    margin-top: 40px;
+}
+
+
+
+.back-to-top {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 50px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: #019031;
+    background-color: transparent;
+}
+
+.back-to-top i {
+    font-size: 30px;
+}
+
+.affiliations h5{
+    color: #019031;
+}
+
+#afiliations{
+    padding-bottom: 90px;
+    padding-top: 20px;
+}
+.affiliations img{
+    height: 150px;
+}
+
+.one-message img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+#messages{
+    margin-top: 40px;
+}
+.message h5{
+    color: #019031;
+}
+
+
+
+#news h5{
+    color: #019031;
+}
+
+.one-message{
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.one-message p{
+    text-align: justify;
+    font-size: 14px;
+}
+.one-message a{
+    text-decoration: none;
+}
+
+.news-body a{
+    text-decoration: none;
+
+}
+
+#readmore{
+    padding-left: 30px;
+}
+.news-body{
+    border: 1px solid red;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+
+
+.carous img{
+    max-height: 340px;
+    min-height: 340px;
+    width: 100%;
+}
+
+
+
+.news .news-body img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+
+#news{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: .7s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+
+.counter{
+    height: 18px;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  padding-top: 30px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 8px;
+  border: 1px solid #888;
+  width: 35%;
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+form input,
+form textarea {
+    background-color: #e3e1ee;
+   
+    width: 100%;
+    height: 30px;
+    border: none;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+    margin: -5px;
+}
+
+form textarea {
+    padding: 5px 5px;
+    height: 80px;
+}
+
+form input:focus,
+form textarea:focus {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.sendbtn{
+    font-size: 12px;
+    width: 20%;
+    height: 70%;
+}
+
+.maincar {
+    position: relative;
+    font-family: Arial;
+  }
+
+  .text-block p {
+    position: absolute;
+
+    bottom: 15px;
+    right: 20px;
+    background-color: rgb(12, 75, 20);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }

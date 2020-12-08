@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Employees | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'team.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="team">
+    <h5>EMPLOYEES</h5>
+    <div class="teams-photos text-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-4"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/manoj_rayamajhi1.jpg" />
+
+          <p id="descp">
+            <strong id="position">Senior Executive Officer</strong><br /><strong>Manoj
+              Rayamajhi</strong><br />Dhulikhel-8, Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4"></div>
+      </div>
+
+      <hr />
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-2">
+          <img id="comittee-image" src="/media/comittee/yamuna_pradhan.jpg" />
+          <p id="descp">
+            <strong id="position">Executive Officer</strong><br /><strong>Yamuna Pradhan</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/sasikala_kc.jpg" />
+          <p id="descp">
+            <strong id="position">Admin/Finance</strong><br /><strong>Sasikala KC</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/pratima_timalsina.jpg" />
+          <p id="descp">
+            <strong id="position">Compliance Officer</strong><br /><strong>Pratima TImalsina</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/albina.jpg" />
+          <p id="descp">
+            <strong id="position">Service Center Officer</strong><br /><strong>Albina
+              Shrestha</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/renuka_timalsina.jpg" />
+          <p id="descp">
+            <strong id="position">Loan Officer</strong><br /><strong>Renuka Timalsina</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-2">
+          <img id="comittee-image" src="/media/comittee/lalita_kc.jpg" />
+          <p id="descp">
+            <strong id="position">Marketing Representative</strong><br /><strong>Lalita KC</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/ninu_kc.jpg" />
+          <p id="descp">
+            <strong id="position">Marketing Representative</strong><br /><strong>Ninu Thapa
+              KC</strong><br />Dhulikhel-8, Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/parbati_shrestha.jpg" />
+          <p id="descp">
+            <strong id="position">Office Helper</strong><br /><strong>Parbati Shrestha</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/mina_archarya.jpg" />
+          <p id="descp">
+            <strong id="position">Office Helper</strong><br /><strong>Mina Archarya</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+
+      <img id="bottom-img" src="/media/bottom.png" />
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

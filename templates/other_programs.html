@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  {% block scripts %}
+
+  <title>Other Programs | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'abus2.css' %}">
+  {% endblock %}
+
+</head>
+
+<body>
+  {% block base1 %}
+
+  <div class="about">
+    <h2>OTHER PROGRAMS</h2>
+    <div class="savings">
+
+      <div id="accordion" class="accordion">
+        <div class="card mb-0">
+
+          {% for p in programs %}
+          <div class="card-header collapsed" data-toggle="collapse" href="#{{p.code}}">
+            <a class="card-title"> {{p.title}} </a>
+          </div>
+          <div id="{{p.code}}" class="card-body collapse">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-7 col-md-7">
+                  <img class="otherimg img-fluid" src="/media/{{p.image}}" alt="second" />
+                </div>
+                <div class="feat col-md-5 col-lg-5">
+                  <p style="margin-top:5vh">
+                    <span><i class="fa fa-caret-right"></i></span> {{p.main_text}}
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  {% endblock %}
+
+
+</body>
+
+</html>

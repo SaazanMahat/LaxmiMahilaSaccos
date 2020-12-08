@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Insurance Programs | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'aboutus.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="about">
+    <h2>INSURANCE PROGRAMS</h2><br>
+    <div class="row">
+      <div class="col-lg-5 col-md-5"><img class="img-fluid" src="/media/lic.png" alt="prabhu-money-transfer"></div>
+      <div class="col-lg-6 col-md-6"><img class="img-fluid" src="/media/alico.jpg" alt="himal-remit"></div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 col-md-5"><img class="img-fluid" src="/media/nepallife.jpg" alt="prabhu-money-transfer">
+      </div>
+      <div class="col-lg-6 col-md-6"><img class="img-fluid" src="/media/siddhartha.jpeg" alt="himal-remit"></div>
+    </div>
+    <div class="savings">
+      <p>Laxmi Saccos has been providing life insurance service to the share members and all the staffs in collaboration
+        with LIC (Life Insurance Corporation) Nepal, Nepal Life Insurance, and METLIFE ALICO(American Life Insurance
+        Company Limited). It also provides non-life insurance in collaboration with Siddhartha Insurance Limited.
+      </p>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

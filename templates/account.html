@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+
+  {% block scripts %}
+  <title>Account Supervision Committee | Laxmi Saccos</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'team.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="team">
+    <h5>ACCOUNT SUPERVISION COMMITTEE</h5>
+    <div class="teams-photos text-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-4"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/sobia_thapamagar.jpg" />
+
+          <p id="descp">
+            <strong id="position">President</strong><br /><strong>Sobita Thapa Magar</strong><br />Dhulikhel-5,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4"></div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/pratigya_bhandari.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Pratigya Bhandari</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/prava_bhadel.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Prabha Bhadel</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+
+      <img id="bottom-img" src="/media/bottom.png" />
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

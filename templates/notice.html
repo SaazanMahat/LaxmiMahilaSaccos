@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+
+  <title>Notices | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'notice.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+
+  <div class="notice">
+    <h2>NEWS & NOTICES</h2>
+    {% for notice in page_obj %}
+    <div class="row notice-block">
+      {% if notice.photo %}
+      <div class="col-lg-3 col-md-3 image">
+        <img style="height: 130px; width: 90%" class="img-fluid" src="/media/{{notice.photo}}"
+          onerror="this.style.display='none'" />
+      </div>
+      <div class="col-lg-9 col-md-9 title">
+        <a href="{% url 'notice-detail' notice.id %}">
+          <h4>
+            <small><i class="fas fa-pencil-alt"></i></small> {{notice.title}}
+          </h4>
+        </a>
+        <p>
+          <small class="text-muted">{{ notice.date_posted|date:"F d, Y"}}</small>
+        </p>
+        <a class="btn readm btn-outline-danger" href="{% url 'notice-detail' notice.id %}">Read More</a>
+        <hr />
+      </div>
+      {% else %}
+      <div class="col-lg-3 col-md-3 image">
+        <img style="height: 130px" class="img-fluid" src="/media/logo.jpg" alt="logo" />
+      </div>
+      <div class="col-lg-9 col-md-9 title">
+        <a href="{% url 'notice-detail' notice.id %}">
+          <h4>
+            <small><i class="fas fa-pencil-alt"></i></small> {{notice.title}}
+          </h4>
+        </a>
+        <p>
+          <small class="text-muted">{{ notice.date_posted|date:"F d, Y"}}</small>
+        </p>
+        <a class="btn readm btn-outline-danger" href="{% url 'notice-detail' notice.id %}">Read More</a>
+        <hr />
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+    <div class="pagination">
+      <span class="step-links">
+        {% if page_obj.has_previous %}
+        <a class="btn btn-outline-primary" href="?page=1">&laquo; first</a>
+        <a class="btn btn-outline-primary" href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+          Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+        </span>
+
+        {% if page_obj.has_next %}
+        <a class="btn btn-outline-primary" href="?page={{ page_obj.next_page_number }}">next</a>
+        <a class="btn btn-outline-primary" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+      </span>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

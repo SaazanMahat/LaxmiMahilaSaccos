@@ -1,0 +1,478 @@
+{% extends "mainbase.html" %}
+{% block base2 %}
+<!DOCTYPE html>
+
+<html lang="en">
+{% load static %}
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+  <title>Home | Laxmi Saccos</title>
+
+
+</head>
+
+<body>
+
+  <section id="banner">
+    <div class="row row1">
+      <div class="col-lg-1 col-md-1"></div>
+
+      <div class="col-lg-5 col-md-5">
+        <img src="/media/logo.jpg" style="width: 15%; height: 90%; position: relative;">
+        <img src="/media/banner.jpg" style="width: 80%; height: 90%;">
+
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+
+      <div class="col-lg-5 col-md-5 location">
+        <ul class="header-address" style="list-style-type: none;">
+          <li id="phone"><i class="fas fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;011-662628<br><span>Landline
+              Number</span></li>&emsp;&emsp;
+          <li id="phone"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>&nbsp;&nbsp;Panauti-05,
+            Kavre<br><span>Office Location</span></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
+      </button>
+
+
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'homepage' %}">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                ABOUT US
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'org_profile' %}">Organization Profile</a>
+                <a class="dropdown-item" href="{% url 'vision' %}">Vision & Mission</a>
+                <a class="dropdown-item" href="{% url 'affiliations' %}">Affiliations</a>
+                <a class="dropdown-item" href="{% url 'policies' %}">Principles</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                TEAM
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'management_team' %}">Management Team</a>
+                <a class="dropdown-item" href="{% url 'account' %}">Account Supervision Committee</a>
+                <a class="dropdown-item" href="{% url 'loan' %}">Loan Sub-Committee</a>
+                <a class="dropdown-item" href="{% url 'communication_team' %}">Education & Communication
+                  Sub-Committee</a>
+                <a class="dropdown-item" href="{% url 'probesan_team' %}">Probation Team</a>
+                <a class="dropdown-item" href="{% url 'branch_office' %}">Branch Office Team</a>
+                <a class="dropdown-item" href="{% url 'employees' %}">Employees</a>
+                <a class="dropdown-item" href="{% url 'other_teams' %}">Other Teams</a>
+
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                SERVICES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'savings' %}">Saving Deposits</a>
+                <a class="dropdown-item" href="{% url 'term' %}">Term Deposit</a>
+                <a class="dropdown-item" href="{% url 'loans' %}">Loans</a>
+                <a class="dropdown-item" href="{% url 'remittance' %}">Remittance</a>
+                <a class="dropdown-item" href="{% url 'insurance' %}">Insurance Programs</a>
+                <a class="dropdown-item" href="{% url 'other_programs' %}">Other Programs</a>
+              </div>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'notice' %}">NEWS & NOTICES</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                GALLERY
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'photo' %}">Photos</a>
+                <a class="dropdown-item" href="{% url 'video' %}">Videos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                DOWNLOADS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'forms' %}">Forms</a>
+                <a class="dropdown-item" href="{% url 'reports' %}">Annual Reports</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </nav>
+
+
+
+  </section>
+
+
+  <div class="sctxt row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1 col-md-1">
+      <p>NOTICE &raquo;</p>
+    </div>
+
+    <div class="col-lg-8 col-md-9">
+      <div class="scrolling-text">
+
+        {% for s in scrollnews %}
+        <a href="{% url 'notice' %}">
+          <marquee behavior="scroll" direction="left" scrollamount="10" loop="-1" onmouseover="this.stop()"
+            onmouseout="this.start()">
+            <p>{{s.content}}</p>
+          </marquee>
+        </a>
+
+        {% endfor %}
+
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-2"></div>
+
+  </div>
+
+
+
+  <div id="demo" class="carousel slide carousel-fade main" data-interval="3000" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/media/main1.jpg" alt="first">
+      </div>
+      <div class="carousel-item">
+        <img src="/media/2nd.jpg" alt="second">
+      </div>
+      <div class="carousel-item">
+        <img src="/media/3rd.jpg" alt="third">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+  <div class=" row main-division">
+    <div class="col-lg-2 col-md-1"></div>
+    <div class="col-lg-8 col-md-10">
+
+      <section id="welcome">
+        <div class="welcome text-center">
+          <h1>WELCOME TO LAXMI MAHILA SACCOS</h1>
+          <h5>“सहकारीको बिकास सँगै सामाजिक बिकास मा समर्पित”</h5>
+          <div class="row">
+            <div class="col-lg-5 col-md-5">
+
+              <p>Since its establishment in Chaitra 13, 2055 BS, Laxmi Saccos has been giving its best to make itself a
+                "Community
+                Based Sustainable, Excellent and Professional Women's Cooperative" by constantly helping all the women
+                of Panauti, Dhulikhel and Banepa
+                Municipality to raise their living
+                standards and increase self-reliance.
+                To provide various economic, social and important information of this organization to the
+                members in a timely and transparent manner, we have developed this website. All our members
+                have
+                their important advice, suggestions and
+                we heartily request all the members and well wishers to show solidarity for the growth and development
+                of this
+                organization with the expectation of continuous
+                support for its creative works. . .
+              </p>
+              <a class="btn btn-outline-primary" href="{% url 'org_profile' %}">Read More</a>
+
+            </div>
+            <div class="carous col-lg-7 col-md-7">
+              <div id="pics" class="carousel slide" data-interval="3000" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+
+
+                  {% for pic in pics %}
+
+                  <li data-target="#pics" data-slide-to="{{ forloop.counter0 }}"
+                    class="{% if forloop.counter0 == 0 %} active {% endif %}"></li>
+
+                  {% endfor %}
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+
+                  {% for pic in pics %}
+                  <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
+                    <div class="maincar">
+                      <img src="/media/{{pic.photo}}" onerror="this.style.display='none'">
+
+                      <div class="text-block">
+                        <p><strong>{{pic.content}}</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#pics" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#pics" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <hr>
+
+
+
+
+      <section id="messages">
+        <div class="row">
+          <div class="message col-lg-4 col-md-4">
+            <h5>Message From Chairperson</h5>
+            <div class="one-message">
+              <img src="/media/comittee/maiya_mahat.jpg">
+              <p>First of all, I would like to warmly welcome you to the official site of Laxmi Mahila Saving and Credit
+                Cooperative
+                Society Limited. Established in 2056 B.S, this organization carries the main motive of
+                making women in the society self-reliant.
+
+                The progress of the community is the national progress, accordingly
+                this organization has its own
+                Vision "Community Based Sustainable, Excellent and Professional Women's Cooperative".This organization
+                provides
+                vocational and skill-based training to women in the community making significant contributions to their
+                self-dependence.. . .
+              </p>
+              <a href="{% url 'msg_chairperson' %}">Read More>></a>
+            </div>
+          </div>
+
+
+          <div class="message col-lg-4 col-md-4">
+            <h5>Commitment From CEO</h5>
+            <div class="one-message">
+              <img src="/media/manoj_sir.jpg">
+              <p>Laxmi Mahila Saving and Credit
+                Cooperative
+                Society Limited is a community based sustainable, excellent and professional
+                Women's cooperative
+                .
+                This organization is for the economic, social and personal development of women in the entire community
+                who are
+                within
+                the jurisdiction of
+                the organization.
+                As the Chief Executive Officer of this organization, I want to make a commitment to all the members,
+                Board of
+                Directors, Accounts
+                Committee and various sub-committees that this organization has become the first excellent women's
+                cooperative
+                in the community . . .
+              </p>
+              <a href="{% url 'msg_manager' %}">Read More>></a>
+            </div>
+          </div>
+          <div class="message news col-lg-4 col-md-4">
+            <h5>Latest Notices</h5>
+            <div class="news-body">
+
+              {% for notice in notices %}
+              {% if notice.photo %}
+
+              <img align="left" class="img-fluid" src="/media/{{notice.photo}}" onerror="this.style.display='none'">
+              <a href="{% url 'notice-detail' notice.id %}">
+                <small> {{notice.title}}</small><br>
+              </a>
+              <small class="text-muted">{{ notice.date_posted|date:"F d, Y"}}</small><br><br>
+
+              {% else %}
+              <img align="left" class="img-fluid" src="/media/logo.jpg" onerror="this.style.display='none'">
+
+              <a href="{% url 'notice-detail' notice.id %}">
+                <small> {{notice.title}}</small><br>
+              </a>
+              <small class="text-muted">{{ notice.date_posted|date:"F d, Y"}}</small><br><br>
+
+              {% endif %}
+
+
+              {% endfor %}
+
+              <small><a href="{% url 'notice' %}">View all News & notices >></a></small>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="news">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <h5>Follow Us</h5>
+            <div class="fb-page"
+              data-href="https://www.facebook.com/Laxmi-Mahila-Saving-Credit-Cooperative-Society-Ltd-609751152431843"
+              data-tabs="timeline" data-width="300" data-height="300" data-small-header="true"
+              data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote
+                cite="https://www.facebook.com/Laxmi-Mahila-Saving-Credit-Cooperative-Society-Ltd-609751152431843"
+                class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/Laxmi-Mahila-Saving-Credit-Cooperative-Society-Ltd-609751152431843">Laxmi
+                  Mahila Saving &amp; Credit Cooperative Society Ltd.</a></blockquote>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h5>Visit Us</h5>
+            <div class="one-message">
+              <iframe style="width: 100%;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.5417360010665!2d85.53364991550062!3d27.607733836468455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb09230e353095%3A0xa2acf637ea7972e4!2sShwet%20Ganesh%20Temple%2C%20Panauti%2045210!5e0!3m2!1sen!2snp!4v1581778616203!5m2!1sen!2snp"
+                width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h5>Any Feedbacks?</h5>
+            <div class="one-message">
+              <form method='POST'>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="sendbtn btn btn-outline-danger">Send</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="afiliations">
+        <div class="affiliations ">
+          <h5>Affiliations</h5>
+
+          <div class="row text-center">
+            <div class="col-lg-3 col-md-3"><img src="/media/nefscun_aff.jpg"></div>
+            <div class="col-lg-3 col-md-3"><img src="/media/national_aff.jpg"></div>
+            <div class="col-lg-3 col-md-3"><img src="/media/kavre_aff.jpg"></div>
+            <div class="col-lg-3 col-md-3"><img src="/media/jilla_aff.jpg"></div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+    </div>
+    <div class="col-lg-2"></div>
+
+    <footer>
+
+      <center>
+        <p style="padding-top: 10px;">Copyright &copy;
+          <script>document.write(new Date().getFullYear()); </script> | All Rights Reserved | Laxmi Mahila Saving &
+          Credit Co-operative Society Ltd.
+        </p>
+      </center>
+
+    </footer>
+    {% for pop in popups %}
+    <!-- The Modal -->
+    <div id="myModal{{pop.title}}" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img style="height: 100%; width: 100%;" src="/media/{{pop.image}}" onerror="this.style.display='none'">
+      </div>
+
+    </div>
+
+
+    <a href="#" class="back-to-top" style="display: inline;">
+      <i class="fa fa-chevron-circle-up"></i>
+    </a>
+
+    <script type="text/javascript">
+
+      $(".close").click(function () {
+        $('#myModal{{pop.title}}').modal('hide');
+      });
+      $(window).on('load', function () {
+        $('#myModal{{pop.title}}').modal('show');
+      });
+    </script>
+    {% endfor %}
+
+    <script type="text/javascript" src="{% static 'home.js' %}"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=2612322109080852&autoLogAppEvents=1"
+      nonce="69dQohZv"></script>
+
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  {% block scripts %}
+
+  <title>Objectives | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'aboutus.css' %}">
+  {% endblock %}
+
+</head>
+
+<body>
+  {% block base1 %}
+
+  <div class="about">
+    <h2>PRINCIPLES</h2>
+
+
+    <div id="blocks">
+
+      <div id="block">
+        <h5>क) सहकारी संरचना </h5>
+        <p>१) सदस्यको स्वामित्व</p>
+        <p>२) सदस्यद्वारा नियन्त्रण </p>
+        <p>३) प्रजातन्त्रिक नियन्त्रण </p>
+      </div>
+    </div>
+    <div id="blocks">
+      <div id="block">
+        <h5>ख) सदस्यलाई सेवा </h5>
+        <p>४) बित्तीय समावेशीकरण </p>
+        <p>५) बित्तीय दीगोपना (स्थायीत्व) </p>
+        <p>६) सदस्यको आर्थीक लाभमा बृद्धि </p>
+      </div>
+    </div>
+
+    <div id="blocks">
+      <div id="block">
+        <h5>ग) सामाजिक उत्तरदायित्व </h5>
+        <p>७) बित्तीय साक्षरता </p>
+        <p>८) सञ्जाल सहकार्य </p>
+        <p>९) सामाजिक उत्तरदायित्व</p>
+        <p>१०) विस्यव्यापी परिकल्पना </p>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  {% endblock %}
+
+</body>
+
+</html>

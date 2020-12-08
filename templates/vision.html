@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  {% block scripts %}
+  <title>Vision | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'aboutus.css' %}">
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="about">
+    <h2>VISION & MISSION </h2>
+    <div class="vision" style="margin-top:30px;">
+      <h5><strong>परिकल्पना (Vision):</strong></h5>
+      <p>" समुदायमा आधारित दिगो उत्कृष्ट व्यवसायिक महिला सहकारी संस्था। "</p>
+      <p>" Community Based Sustainable, Excellent and Professional Women's Cooperative. "</p>
+    </div>
+    <div class="mission" style="margin-top:30px;">
+      <h5><strong>ध्येय (Mission):</strong></h5>
+      <p>" सहकारी सिद्दान्त अनुसार बचत तथा ॠन परिचालनको माध्यमबाट सदस्यहरूको आर्थिक जिवनस्तरमा सुधार ल्याई आधुनिक
+        प्रबिधिको प्रयोग गरी सदस्यहरुको आवश्यकतालाई मध्यनजर गर्दै समय सापेक्ष सेवाबाट महिलहरुलाई सक्षम बनाई समुदायको
+        पहिलो रोजाईको संस्था बनाउने। "</p>
+      <p>"Creating an organization of first choice through
+        savings and loan mobilizations according to the cooperative theory and by improving the economic living standard
+        of the women using modern technologies to empower them through time-relevant service.
+        "</p>
+    </div>
+
+  </div>
+
+  {% endblock %}
+
+</body>
+
+</html>

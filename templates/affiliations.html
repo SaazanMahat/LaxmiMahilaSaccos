@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Affiliations | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'aboutus.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="about">
+    <h2>AFFILIATIONS</h2>
+    <center><img src="/media/affi.png" /></center>
+    <div id="remit">
+      <p>
+        Laxmi Saccos is affiliated to different organizations at district,
+        regional & national level for coordinated effort in the cooperative
+        movement.
+      </p>
+      <p>
+        1. Nepal Federation of Saving & Credit Cooperative Union ltd .
+        (NEFSCUN)
+      </p>
+      <p>
+        2. Kabhrepalanchowk District Saving & Credit Cooperative Union ltd.
+      </p>
+      <p>3. District Cooperative Union, Kavre</p>
+      <p>4. National Cooperative Bank</p>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Communication Team | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'team.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="team">
+    <h5>EDUCATION & COMMUNICATION SUB-COMMITTEE</h5>
+    <div class="teams-photos text-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-4"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/subasana_shrestha.jpg" />
+
+          <p id="descp">
+            <strong id="position">Coordinator</strong><br /><strong>Subasana Shrestha</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4"></div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/mamita_shrestha.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Mamita Shrestha</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-3"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/sabina_thapa.jpg" />
+          <p id="descp">
+            <strong id="position">Member</strong><br /><strong>Sabina Thapa</strong><br />Dhulikhel-8,
+            Kavre<br />
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-2"></div>
+      </div>
+
+      <img id="bottom-img" src="/media/bottom.png" />
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

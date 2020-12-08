@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  {% block scripts %}
+
+  <title>Remittance | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'aboutus.css' %}">
+  {% endblock %}
+
+</head>
+
+<body>
+  {% block base1 %}
+
+  <div class="about">
+    <h2>REMITTANCE</h2>
+    <div class="savings">
+      <div class="row">
+        <div class="col-lg-6 col-md-6"><img class="img-fluid" src="/media/prabhu.jpg" alt="prabhu-money-transfer"></div>
+        <div class="col-lg-6 col-md-6"><img class="img-fluid" src="/media/himal.jpg" alt="himal-remit"></div>
+      </div>
+
+      <div id="remit">
+        <p>Laxmi SACCOS has been providing money transfer service to the community people being the agent & sub agent of
+          different remmitance company as follows .</p>
+        <p><span><i class="fa fa-caret-right"></i></span> Prabhu Money Transfer</p>
+        <p><span><i class="fa fa-caret-right"></i></span> Himal Remit</p>
+      </div>
+    </div>
+  </div>
+
+
+  {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/media/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {% block scripts %}
+    <link rel="stylesheet" type="text/css" href="{% static 'gallery.css' %}" />
+    <title>Photos | Laxmi Saccos</title>
+    {% endblock %}
+  </head>
+
+  <body>
+    {% block base1 %}
+
+    <h2>PHOTOS</h2>
+
+    {% for p in page_obj %}
+    <div class="photos-block">
+      <a href="{% url 'photo-detail' p.id %}"
+        ><h5>
+          <small><i class="fas fa-images"></i></small> {{p.title}}
+        </h5></a
+      >
+      <small class="text-muted"
+        >Posted On: {{ p.date_posted|date:"F d, Y"}}</small
+      ><br />
+      <img
+        class="img-fluid img-main"
+        src="/media/{{p.image}}"
+        onerror="this.style.display='none'"
+      />
+      <a
+        class="view-all btn btn-outline-danger"
+        href="{% url 'photo-detail' p.id %}"
+        >View All <i class="fa fa-angle-double-right"></i
+      ></a>
+    </div>
+    {% endfor %}
+    <div class="pagination">
+      <span class="step-links">
+        {% if page_obj.has_previous %}
+        <a class="btn btn-outline-primary" href="?page=1">&laquo; first</a>
+        <a
+          class="btn btn-outline-primary"
+          href="?page={{ page_obj.previous_page_number }}"
+          >previous</a
+        >
+        {% endif %}
+
+        <span class="current">
+          Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+        </span>
+
+        {% if page_obj.has_next %}
+        <a
+          class="btn btn-outline-primary"
+          href="?page={{ page_obj.next_page_number }}"
+          >next</a
+        >
+        <a
+          class="btn btn-outline-primary"
+          href="?page={{ page_obj.paginator.num_pages }}"
+          >last &raquo;</a
+        >
+        {% endif %}
+      </span>
+    </div>
+    {% endblock %}
+  </body>
+</html>

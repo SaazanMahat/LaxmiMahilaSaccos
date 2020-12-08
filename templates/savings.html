@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  {% block scripts %}
+  <title>Savings | Laxmi Saccos</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'aboutus.css' %}">
+  <script type="text/javascript" src="{% static 'servic.js' %}"></script>
+  {% endblock %}
+
+</head>
+
+<body>
+  {% block base1 %}
+
+  <div class="about">
+    <h2>SAVINGS</h2>
+    <div class="savings">
+
+      <div id="accordion" class="accordion">
+        <div class="card mb-0">
+
+          {% for s in savings %}
+          <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#{{s.code}}">
+            <a class="card-title"> {{s.title}} </a>
+          </div>
+          <div id="{{s.code}}" class="card-body collapse" data-parent="#accordion">
+            <img class="img-fluid" src="/media/{{s.image}}" alt="error">
+          </div>
+          {% endfor %}
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+  {% endblock %}
+
+</body>
+
+</html>

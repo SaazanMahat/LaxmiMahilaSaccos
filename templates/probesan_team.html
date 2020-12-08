@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/media/favicon.png">
+  {% block scripts %}
+
+  <title>Probation Team | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'team.css' %}">
+  {% endblock %}
+
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="team">
+    <h5>PROBATION TEAM</h5>
+    <div class="teams-photos text-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-4"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/maiya_mahat.jpg">
+
+          <p id="descp"><strong id="position">Coordinator</strong><br><strong>Maiya Mahat</strong><br>Dhulikhel-8,
+            Kavre<br></p>
+        </div>
+        <div class="col-lg-4 col-md-4"></div>
+
+      </div>
+      <hr>
+
+
+      <div class="row">
+        <div class="col-lg-1 col-md-1"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/mira_bogati.jpg">
+          <p id="descp"><strong id="position">Member</strong><br><strong>Mira Bogati</strong><br>Dhulikhel-8,
+            Kavre<br></p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/rita_kc.jpg">
+          <p id="descp"><strong id="position">Member</strong><br><strong>Rita KC</strong><br>Dhulikhel-8,
+            Kavre<br></p>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/yamuna_pradhan.jpg">
+          <p id="descp"><strong id="position">Member</strong><br><strong>Yamuna Pradhan</strong><br>Dhulikhel-8,
+            Kavre<br></p>
+        </div>
+        <div class="col-lg-2 col-md-2 "></div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4"></div>
+        <div class="col-lg-3 col-md-3">
+          <img id="comittee-image" src="/media/comittee/manoj_rayamajhi.jpg">
+
+          <p id="descp"><strong id="position">Member</strong><br><strong>Manoj Rayamajhi</strong><br>Dhulikhel-8,
+            Kavre<br></p>
+        </div>
+        <div class="col-lg-4 col-md-4"></div>
+
+      </div>
+
+
+
+      <img id="bottom-img" src="/media/bottom.png">
+    </div>
+  </div>
+  {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+{% extends "mainbase.html" %}
+{% block base2 %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/media/favicon.png">
+    <title>Contact | Laxmi Saccos</title>
+</head>
+
+<body>
+
+    <section id="banner">
+        <div class="row row1">
+            <div class="col-lg-1 col-md-1"></div>
+
+            <div class="col-lg-5 col-md-5">
+                <img src="/media/logo.jpg" style="width: 15%; height: 90%; position: relative;">
+                <img src="/media/banner.jpg" style="width: 80%; height: 90%;">
+
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+
+            <div class="col-lg-5 col-md-5 location">
+                <ul class="header-address" style="list-style-type: none;">
+                    <li id="phone"><i class="fas fa-phone"
+                            aria-hidden="true"></i>&nbsp;&nbsp;011-662628<br><span>Landline Number</span></li>
+                    &emsp;&emsp;
+                    <li id="phone"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>&nbsp;&nbsp;Panauti-05,
+                        Kavre<br><span>Office Location</span></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg sticky-top">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
+            </button>
+
+
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'homepage' %}">HOME <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ABOUT US
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'org_profile' %}">Organization Profile</a>
+                                <a class="dropdown-item" href="{% url 'vision' %}">Vision & Mission</a>
+                                <a class="dropdown-item" href="{% url 'affiliations' %}">Affiliations</a>
+                                <a class="dropdown-item" href="{% url 'policies' %}">Objectives</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TEAM
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'management_team' %}">Management Team</a>
+                                <a class="dropdown-item" href="{% url 'account' %}">Account Supervision Committee</a>
+                                <a class="dropdown-item" href="{% url 'loan' %}">Loan Sub-Committee</a>
+                                <a class="dropdown-item" href="{% url 'communication_team' %}">Education & Communication
+                                    Sub-Committee</a>
+                                <a class="dropdown-item" href="{% url 'probesan_team' %}">Probesan Team</a>
+                                <a class="dropdown-item" href="{% url 'branch_office' %}">Branch Office Team</a>
+                                <a class="dropdown-item" href="{% url 'employees' %}">Employees</a>
+                                <a class="dropdown-item" href="{% url 'other_teams' %}">Other Teams</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                SERVICES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'savings' %}">Saving Deposits</a>
+                                <a class="dropdown-item" href="{% url 'term' %}">Term Deposits</a>
+                                <a class="dropdown-item" href="{% url 'loans' %}">Loans</a>
+                                <a class="dropdown-item" href="{% url 'remittance' %}">Remittance</a>
+                                <a class="dropdown-item" href="{% url 'insurance' %}">Insurance Programs</a>
+                                <a class="dropdown-item" href="{% url 'other_programs' %}">Other Programs</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'notice' %}">NEWS & NOTICES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                GALLERY
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'photo' %}">Photos</a>
+                                <a class="dropdown-item" href="{% url 'video' %}">Videos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                DOWNLOADS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'forms' %}">Forms</a>
+                                <a class="dropdown-item" href="{% url 'reports' %}">Annual Reports</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+
+
+
+    </section>
+
+
+    <div class="sctxt row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1 col-md-1">
+            <p>NOTICE &raquo;</p>
+        </div>
+
+        <div class="col-lg-8 col-md-9">
+            <div class="scrolling-text">
+
+                {% for s in scrollnews %}
+                <a href="{% url 'notice' %}">
+                    <marquee behavior="scroll" direction="left" scrollamount="10" loop="-1" onmouseover="this.stop()"
+                        onmouseout="this.start()">
+                        <p>{{s.content}}</p>
+                    </marquee>
+                </a>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div class="col-lg-2 col-md-2"></div>
+
+    </div>
+
+
+
+    <div class="contactbanner text-center">
+        <h2>CONTACT US</h2>
+    </div>
+
+    <div>
+        <iframe style="width: 100%;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.5417360010665!2d85.53364991550062!3d27.607733836468455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb09230e353095%3A0xa2acf637ea7972e4!2sShwet%20Ganesh%20Temple%2C%20Panauti%2045210!5e0!3m2!1sen!2snp!4v1581778616203!5m2!1sen!2snp"
+            width="600" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="contact-details col-lg-5 col-md-5">
+                <p> Feel free to call us directly or simply complete our form and we will follow up with you.</p>
+
+                <div class="visit-us mb-4 mt-1">
+
+                    <div class="contact-content" data-wow-delay="0.1s">
+
+                        <h5><strong>Head Office</strong></h5>
+                        <div class="contact-icon">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Panauti-05,Kavre</p>
+                        </div>
+
+                        <div class="contact-icon">
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;011-662628</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact-us mb-4" data-wow-delay="0.2s">
+
+                    <div class="contact-content">
+                        <h5><strong>Branch Office</strong></h5>
+                        <div class="contact-icon">
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Banepa-7,Godamchwok, Kavre
+                            </p>
+                        </div>
+
+                        <div class="contact-icon">
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp; 011-660060</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="contact-us" data-wow-delay="0.2s">
+
+                    <div class="contact-content">
+                        <h5><strong>Information Officer</strong></h5>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img align="left" class="img-fluid" src="/media/comittee/manoj_rayamajhi1.jpg"
+                                    onerror="this.style.display='none'">
+
+                            </div>
+
+                            <div class="col-lg-8 mt-2">
+                                <p><strong>Manoj Rayamajhee</strong> <br>
+
+                                    rayamanoj12@gmail.com<br>
+                                    9851081782<br> 9851157057</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="contact-form col-md-6" style="margin-bottom: 150px;">
+                {% if messages %}
+                {% for message in messages %}
+                <div id="alert" class="alert alert-danger" role="alert">
+                    {{message}}
+                </div>
+                {% endfor %}
+
+                {% endif %}
+                <form method='POST'>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn btn-outline-danger">Send</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+
+        <center>
+            <p style="padding-top: 20px;">Copyright &copy;
+                <script>document.write(new Date().getFullYear()); </script> | All Rights Reserved | Laxmi Mahila Saving
+                & Credit Co-operative Society Ltd.</p>
+        </center>
+
+    </footer>
+    <script>
+        var message_ele = document.getElementById("alert");
+
+        setTimeout(function () {
+            message_ele.style.display = "none";
+        }, 5000);
+    </script>
+</body>
+
+</html>
+{% endblock %}

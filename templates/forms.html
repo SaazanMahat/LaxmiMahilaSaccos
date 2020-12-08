@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Forms | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'gallery.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="photos">
+    <h2>FORMS</h2>
+    {% for form in forms %}
+    <div class="photos-block">
+      <a href="{{form.file.url}}">
+        <h5><i class="fa fa-hand-o-right"></i> {{form.title}}</h5>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endblock %}
+</body>
+
+</html>

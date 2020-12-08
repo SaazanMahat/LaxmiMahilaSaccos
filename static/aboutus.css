@@ -1,0 +1,146 @@
+.about{
+  padding-top: 5px;
+}
+
+.about-block{
+  margin-top: 25px;
+
+}
+
+.about a{
+  text-decoration: none;
+
+}
+
+
+.about h2{
+  color: #333;
+  padding: 10px 2px;
+  font-size: 25px;
+  font-weight: 800;
+  position: relative;
+}
+
+.about h2:before {
+position: absolute;
+left: 0;
+top: 1.9em;
+height: 20px;
+width: 50px;
+content: '';
+border-top: 4px solid red;
+border-radius: 3px;
+
+}
+
+
+#blocks{
+margin-top: 40px;
+margin-left: 40px;
+border: 3px solid green;
+width: 60%;
+border-bottom-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+
+#block{
+margin-left: 50px;
+padding: 5px;
+}
+
+#blocks h5{
+color: #E8290B;
+}
+
+#blocks p{
+font-size: 15px;
+margin-left: 40px;
+}
+
+
+
+
+
+#message{
+padding-top: 25px;
+}
+
+#message img{
+border-radius: 10px;
+width: 130px;
+height: 150px;
+}
+
+#message p{
+font-size: 15px;
+padding-right: 60px;
+text-align: justify;
+color: #333;
+padding-top: 10px;
+}
+
+#message h5{
+padding-top: 10px;
+}
+
+.more{
+display: none;
+}
+
+
+.savings{
+padding-top: 30px;
+}
+
+
+
+.accordion .card-header:after {
+  font-family: 'FontAwesome';
+  content: "\25B2";
+  float: right;
+}
+.accordion .card-header.collapsed:after {
+
+  content: "\25BC";
+}
+
+.card-header:hover{
+transform: scale(1.01);
+background: #EAF0F1;
+
+
+}
+
+.accordion img{
+  width: 95%;
+  
+}
+
+.accordion .card-header{
+  padding: 7px 30px;
+}
+
+
+#remit{
+margin-top: 30px;
+}
+
+#remit p{
+font-size: 14px;
+font-weight: 500;
+}
+
+#remit img{
+padding-bottom: 30px;
+width: 95%;
+}
+
+
+.loanimg{
+height: 200px;
+}
+
+.otherimg{
+  max-height: 250px;
+  height: auto;
+}

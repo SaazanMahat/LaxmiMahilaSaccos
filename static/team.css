@@ -1,0 +1,45 @@
+.team{
+    padding-top: 5px;
+
+}
+
+
+
+.team a{
+    text-decoration: none;
+
+}
+
+
+.team h5{
+    color: #fff;
+    padding: 5px 2px;
+    padding-left: 30px;
+    font-weight: 700;
+    position: relative;
+    background-image: url(/media/top.png);
+    width: 97%;
+
+}
+
+
+#comittee-image{
+  margin-bottom: 8px;
+  margin-top: 20px;
+  width: 130px;
+  height: 150px;
+}
+
+#bottom-img{
+  width: 95%;
+  height: 65px;
+  padding-top: 30px;
+}
+
+#position{
+  color: #019031;
+}
+
+#descp{
+  font-size: 15px;
+}

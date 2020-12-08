@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Loans | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'abus2.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="about">
+    <h2>LOANS</h2>
+
+    <div class="savings">
+      <div id="accordion" class="accordion">
+        <div class="card mb-0">
+
+
+          {% for l in loans %}
+          <div class="card-header collapsed" data-toggle="collapse" href="#{{l.code}}">
+            <a class="card-title"> {{l.title}} </a>
+          </div>
+          <div id="{{l.code}}" class="card-body collapse">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-5 col-md-5">
+                  <img class="loanimg img-fluid" src="/media/{{l.image}}" alt="second" />
+                </div>
+                <div class="feat col-md-7 col-lg-7">
+                  <p>
+                    <span><i class="fa fa-caret-right"></i></span> {{l.main_text}}
+                  </p>
+                  <p>
+                    <span><i class="fa fa-caret-right"></i></span> अधिकतम
+                    लगानी: {{l.amount}}
+                  </p>
+                  <p>
+                    <span><i class="fa fa-caret-right"></i></span> अधिकतम
+                    भाखा: {{l.time}}
+                  </p>
+                  <p>
+                    <span><i class="fa fa-caret-right"></i></span> मासिक
+                    ब्याजदर: {{l.monthly_interest_rate}}
+                  </p>
+                  {% if l.traimasik_interest_rate %}
+                  <p>
+                    <span><i class="fa fa-caret-right"></i></span> त्रैमासिक
+                    व्याजदर: {{l.traimasik_interest_rate}}
+                  </p>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  {% endblock %}
+</body>
+
+</html>

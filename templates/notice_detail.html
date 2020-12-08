@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/media/favicon.png" />
+  {% block scripts %}
+  <title>Notice | Laxmi Saccos</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'notice.css' %}" />
+  {% endblock %}
+</head>
+
+<body>
+  {% block base1 %}
+  <div class="notice">
+    <div class="notice-block">
+      <h5 style="margin-right: 40px">{{notice.title}}</h5>
+      <small class="text-muted">{{ notice.date_posted|date:"F d, Y"}}</small><br>
+      <br />
+      <p>{{notice.content}}</p>
+
+      {% if notice.photo %}
+      <a href="{{notice.photo.url}}">
+        <img class="img-fluid" id="posting" style="width: 850px; height: 520px" src="/media/{{notice.photo}}"
+          onerror="this.style.display='none'" />
+      </a>
+      {% endif %}
+      <br />
+      <br />
+      <a class="btn btn-outline-primary" href="{% url 'notice' %}">Back</a>
+    </div>
+  </div>
+  {% endblock %}
+</body>
+
+</html>

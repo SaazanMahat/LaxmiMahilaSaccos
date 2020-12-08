@@ -1,0 +1,51 @@
+.notice{
+    padding-top: 10px;
+}
+
+.notice-block{
+    margin-top: 40px;
+
+}
+
+.notice a{
+    text-decoration: none;
+
+}
+
+.title h4{
+    font-size: 17px;
+}
+.readm{
+    padding-top: 5px;
+}
+
+.notice h2{
+    color: #333;
+    padding: 0px 2px;
+    font-size: 24px;
+    font-weight: 800;
+    position: relative;
+}
+
+.notice h2:before {
+  position: absolute;
+  left: 0;
+  top: 1.9em;
+  height: 20px;
+  width: 50px;
+  content: '';
+  border-top: 4px solid red;
+  border-radius: 3px;
+}
+
+.notice-block .image img{
+  border-radius: 25px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .notice-block .image img{
+    display: none;
+  }
+
+}
